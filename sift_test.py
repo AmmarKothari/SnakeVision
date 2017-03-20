@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 
 print(cv2.__version__)
@@ -14,8 +14,8 @@ cv2.imwrite('sift_keypoints.jpg',img)
 
 
 
-plt.imshow(img)
-plt.show()
-# cv2.imwshow('sift_keypoints.jpg',img)
-# cv2.waitKey(0)
-# cv2.destroyAllWindows()
+# plt.imshow(img)
+# plt.show()
+cv2.imwshow('sift_keypoints.jpg',img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()

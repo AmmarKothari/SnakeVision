@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 filename = 'Image_01.png'
 img = cv2.imread(filename)
@@ -15,9 +15,9 @@ dst = cv2.dilate(dst,None)
 # Threshold for an optimal value, it may vary depending on the image.
 img[dst>0.01*dst.max()]=[0,0,255]
 
-# cv2.imshow('dst',img)
-# cv2.waitKey(0)
-plt.imshow(img)
-plt.show()
-# if cv2.waitKey(0) & 0xff == 27:
-#     cv2.destroyAllWindows()
+cv2.imshow('dst',img)
+cv2.waitKey(0)
+# plt.imshow(img)
+# plt.show()
+if cv2.waitKey(0) & 0xff == 27:
+    cv2.destroyAllWindows()
